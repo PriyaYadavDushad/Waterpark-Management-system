@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" styleClass="bodybg1" stylesheets="@batchimg.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.batch.BatchController">
+   <children>
+      <Label alignment="CENTER" layoutX="280.0" layoutY="32.0" prefHeight="43.0" prefWidth="237.0" text="Batch Allocation">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="67.0" prefHeight="27.0" prefWidth="87.0" text="Batch Id" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="118.0" prefHeight="27.0" prefWidth="104.0" text="Batch type">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="237.0" prefHeight="20.0" prefWidth="63.0" text="Fees">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="163.0" prefHeight="20.0" prefWidth="63.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="200.0" prefHeight="20.0" prefWidth="63.0" text="Ticket ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="285.0" prefHeight="27.0" prefWidth="139.0" text="Food Applicable">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radiobatchfood" layoutX="425.0" layoutY="285.0" mnemonicParsing="false" onAction="#radiobatch" text="Yes">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="foodradio" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radiobatchfoodno" layoutX="500.0" layoutY="285.0" mnemonicParsing="false" onAction="#radiobatchno" prefHeight="27.0" prefWidth="63.0" text="No" toggleGroup="$foodradio">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextArea fx:id="txtbatchid" layoutX="164.0" layoutY="62.0" prefHeight="27.0" prefWidth="192.0" visible="false" />
+      <TextArea fx:id="txtbatchtype" layoutX="350.0" layoutY="112.0" prefHeight="27.0" prefWidth="192.0" wrapText="true" />
+      <TextArea fx:id="txtbatchtime" layoutX="350.0" layoutY="158.0" prefHeight="27.0" prefWidth="192.0" />
+      <ComboBox fx:id="combobatchticket" layoutX="350.0" layoutY="201.0" prefHeight="25.0" prefWidth="192.0" />
+      <TextArea fx:id="txtbatchfees" layoutX="350.0" layoutY="232.0" prefHeight="27.0" prefWidth="192.0" />
+      <Button fx:id="btnbatchnew" layoutX="250.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnNewBatchClick" text="New">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnbatchdelete" layoutX="500.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnDeleteBatchClick" text="Delete">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnbatchsave" layoutX="325.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnSaveBatchClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnbatchupdate" layoutX="400.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnUpdateBatchClick" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="ancher1" layoutX="114.0" layoutY="374.0" maxHeight="50.0" minHeight="50.0" onMouseClicked="#clickItem" prefHeight="10.0" prefWidth="960.0" />
+   </children>
+</AnchorPane>

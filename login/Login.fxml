@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fieldpassword" prefHeight="531.0" prefWidth="661.0" styleClass="bodybg2" stylesheets="@background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.login.LoginController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="265.0" layoutY="20.0" prefHeight="53.0" prefWidth="190.0" text="LOGIN" textAlignment="JUSTIFY" textFill="#adae59">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="fieldUsername" focusColor="#eef219" layoutX="163.0" layoutY="122.0" prefHeight="35.0" prefWidth="278.0" promptText="Username" styleClass="background79" stylesheets="@fontcolor.css" unFocusColor="#eef219">
+         <font>
+            <Font name="Lucida Console" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor></JFXTextField>
+      <JFXPasswordField fx:id="fieldPwd" layoutX="163.0" layoutY="254.0" prefHeight="25.0" prefWidth="278.0" unFocusColor="#f8f81c" />
+      <ButtonBar fx:id="btnlog" layoutX="331.0" layoutY="340.0" onMouseClicked="#btnlogclick" prefHeight="100.0" prefWidth="110.0">
+         <buttons>
+            <ImageView fx:id="imglogin" fitHeight="96.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@final.png" />
+               </image>
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="2.0" light="$null" specularConstant="2.0" specularExponent="35.24" surfaceScale="7.21" />
+               </effect>
+            </ImageView>
+         </buttons>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#fcf700" />
+               </light>
+            </Lighting>
+         </effect>
+      </ButtonBar>
+      <ImageView fitHeight="120.0" fitWidth="133.0" layoutX="441.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@honeybee.gif" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>

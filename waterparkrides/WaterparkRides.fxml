@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="635.0" styleClass="bodybg1" stylesheets="@rides.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.waterparkrides.WaterparkRidesController">
+   <children>
+      <Label layoutX="209.0" layoutY="45.0" text="Waterpark Rides">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="88.0" prefHeight="17.0" prefWidth="76.0" text="Ride Id" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="145.0" text="Ride Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtridename" layoutX="303.0" layoutY="140.0" prefHeight="35.0" prefWidth="151.0" />
+      <TextArea fx:id="txtrideid" layoutX="283.0" layoutY="77.0" prefHeight="35.0" prefWidth="151.0" visible="false" />
+      <Button fx:id="btnridenew" layoutX="157.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnNewWaterparkRidesClick" prefHeight="25.0" prefWidth="76.0" text="New">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnridedelete" layoutX="435.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnDeleteWaterparkRidesClick" prefHeight="25.0" prefWidth="76.0" text="Delete">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnridesave" layoutX="253.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnSaveWaterparkRidesClick" prefHeight="25.0" prefWidth="76.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnrideupdate" layoutX="344.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnUpdateWaterparkRidesClick" prefHeight="25.0" prefWidth="76.0" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="ancher1" layoutX="150.0" layoutY="250.0" prefHeight="150.0" prefWidth="600" stylesheets="@rides.css" />
+      <ImageView fitHeight="183.0" fitWidth="175.0" layoutX="600.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mrides.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

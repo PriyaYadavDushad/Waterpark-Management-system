@@ -1,0 +1,10 @@
+.background78
+{
+     -fx-background-image: url("kut.png");
+
+}
+
+.button
+{
+  -fx-background-radius:100;
+}
